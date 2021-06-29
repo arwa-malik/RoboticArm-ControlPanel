@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Control </title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+table {
+  width: 23%;
+margin: auto; }
+
+th, td {  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;}
+
+div {  background-color:  none ;}
+
+div.first {  opacity: 0.5;}
+
+body {  background:    "bac.png"
+;}
+
+h1 {  color:  #00802b;
+      border-left: 6px solid #00802b;
+      font-family: "Audiowide", sans-serif;}
+
+      .container {
+        position: relative;
+        width: 40%;
+      }
+
+
+      .container .btn {
+        top: 50%;
+        left: 760%;
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 600px ;
+
+
+
+      }
+
+      .container .btn:hover {
+        color: #00802b; box-shadow: 0 12px 16px 0 #00802b;}
+      }
+
+
+      .slidecontainer {
+        width: 30%;
+      }
+
+      body {
+        background-image: url("arm.png");
+        background-repeat: no-repeat;
+      }
+</style>
+
+</head>
+
+<body >
+  <div class="first">
+        <h1> Control Panel
+    <br/>    <br/>ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</h1>
+  </div>
+
+
+
+<table>
+  <!-- __________________________1____________________________-->
+  <tr>
+    <td>    <span id="demo"></span> % </td>
+    <td>    <div class="slidecontainer">
+          <input type="range" min="0" max="180" value="0" id="myRange">  </div>          </td>
+    <th> 6المحرك </th>
+  </tr>
+  <!-- __________________________2____________________________-->
+
+  <tr>
+    <td>    <span id="demo2"></span> % </td>
+    <td>    <div class="slidecontainer">
+          <input type="range" min="0" max="180" value="0" id="myRange2">  </div>   </td>
+    <th> 6المحرك </th>
+  </tr>
+  <!-- __________________________3____________________________-->
+
+  <tr>
+    <td>    <span id="demo3"></span> % </td>
+    <td>    <div class="slidecontainer">
+          <input type="range" min="0" max="180" value="0" id="myRange3">  </div>   </td>
+    <th> 6المحرك </th>
+  </tr>
+  <!-- ___________________________4___________________________-->
+
+  <tr>
+    <td>    <span id="demo4"></span> % </td>
+    <td>    <div class="slidecontainer">
+          <input type="range" min="0" max="180" value="0" id="myRange4">  </div>   </td>
+    <th> 6المحرك </th>
+  </tr>
+  <!-- __________________________5____________________________-->
+
+
+  <tr>
+    <td>    <span id="demo5"></span> % </td>
+    <td>    <div class="slidecontainer">
+          <input type="range" min="0" max="180" value="0" id="myRange5">  </div>   </td>
+    <th> 6المحرك </th>
+  </tr>
+  <!-- _____________________________6_________________________-->
+
+
+  <tr>
+    <td>    <span id="demo6"></span> % </td>
+    <td>    <div class="slidecontainer">
+          <input type="range" min="0" max="180" value="0" id="myRange6">  </div>   </td>
+    <th> 6المحرك </th>
+  </tr>
+
+</table>
+
+<div class="container">
+  <button class="btn">save</button>
+</br>
+  <button class="btn">start</button>
+</div>
+
+
+
+<script>
+<!--1
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+slider.oninput = function() {  output.innerHTML = this.value;}
+<!--2
+var slider2 = document.getElementById("myRange2");
+var output2 = document.getElementById("demo2");
+output2.innerHTML = slider2.value;
+slider2.oninput = function() {  output2.innerHTML = this.value;}
+<!--3
+var slider3 = document.getElementById("myRange3");
+var output3 = document.getElementById("demo3");
+output3.innerHTML = slider3.value;
+slider3.oninput = function() {  output3.innerHTML = this.value;}
+<!--4
+var slider4 = document.getElementById("myRange4");
+var output4 = document.getElementById("demo4");
+output4.innerHTML = slider4.value;
+slider4.oninput = function() {  output4.innerHTML = this.value;}
+<!--5
+var slider5 = document.getElementById("myRange5");
+var output5 = document.getElementById("demo5");
+output5.innerHTML = slider5.value;
+slider5.oninput = function() {  output5.innerHTML = this.value;}
+<!--6
+var slider6 = document.getElementById("myRange6");
+var output6 = document.getElementById("demo6");
+output6.innerHTML = slider6.value;
+slider6.oninput = function() {  output6.innerHTML = this.value;}
+
+</script>
+</body>
+</html>
